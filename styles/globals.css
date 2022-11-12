@@ -4,7 +4,26 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  position: relative;
 }
+
+/* @font-face {
+  font-family: Inter;
+  font-weight: bold;
+  src: url(/fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: bolder ;
+  src: url(/fonts/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: normal ;
+  src: url(/fonts/Inter-Regular.ttf);
+} */
 
 a {
   color: inherit;
