@@ -3,6 +3,7 @@ import { Container, List, ListItem, Typography } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "/images/logo.svg";
+import MobileHeader from "../components/header/mobileHeader";
 
 const header = [
   {
@@ -35,7 +36,7 @@ export default function Header() {
           <Grid2>
             <Image src={logo} alt="logo" />
           </Grid2>
-          <Grid2>
+          <Grid2 className="hidden md:block">
             <List className="flex">
               {header.map((val, index) => {
                 return (
@@ -47,6 +48,9 @@ export default function Header() {
                 );
               })}
             </List>
+          </Grid2>
+          <Grid2 className="block md:hidden">
+            <MobileHeader />
           </Grid2>
         </Grid2>
       </Container>

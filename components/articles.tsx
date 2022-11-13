@@ -5,7 +5,7 @@ import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 
 export default function Article() {
     return(
-        <Grid2 className="bg-black text-white mb-14 h-60">
+        <Grid2 className="bg-black text-white mb-14 h-auto">
             <Container>
                 <Typography variant="h3" className="mt-6 mb-2 relative text-amber-500 font-bold">NEW</Typography>
                 <Grid2 className="border-b-2 border-solid border-gray-500 border-x-0 border-t-0 py-7">

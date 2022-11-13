@@ -1,11 +1,9 @@
-import { Container } from '@mui/material';
-import Grid2 from '@mui/material/Unstable_Grid2/Grid2'
+import { Container } from "@mui/material";
+import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import type { NextPage } from "next";
-import Head from 'next/head'
-import Header from '../components/header';
-import MainPage from '../components/mainPage';
-
-
+import Head from "next/head";
+import Header from "../components/header";
+import MainPage from "../components/mainPage";
 
 const Home: NextPage = () => {
   return (
@@ -16,18 +14,15 @@ const Home: NextPage = () => {
         <link rel="icon" href="/images/favicon-32x32.png" />
       </Head>
       <body>
-        <Container>
-          <Grid2>
-            <Header />
-          </Grid2>
-          <Grid2>
-            <MainPage />
-          </Grid2>
-        </Container>
-        
+        <Grid2>
+          <Header />
+        </Grid2>
+        <Grid2>
+          <MainPage />
+        </Grid2>
       </body>
     </div>
-  )
-}
+  );
+};
 
 export default Home;

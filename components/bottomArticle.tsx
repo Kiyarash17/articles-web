@@ -28,10 +28,10 @@ const items = [
 
 export default function BottomArticle() {
   return (
-    <Grid2 className="flex my-16">
+    <Grid2 className="flex my-16 flex-wrap">
       {items.map((val, index) => {
         return (
-          <Grid2 key={index} className="flex flex-1 mr-8">
+          <Grid2 key={index} className="flex w-full md:flex-1 md:mr-8 mb-5 md:mb-0">
             <Image src={val.image} alt="Article Image" className="w-24 h-auto" />
             <Grid2 className="ml-3">
               <Typography variant="h3" className="text-gray-400">{val.number}</Typography>
